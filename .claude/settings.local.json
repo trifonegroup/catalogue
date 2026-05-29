@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"/Users/mac/Trifone Catologue/.claude/skills/design-inspiration-refs\")",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --no-eslint --yes)",
+      "Bash(npm --version)",
+      "Read(//usr/local/lib/node_modules/**)",
+      "Read(//Users/mac/.npm/**)"
+    ],
+    "additionalDirectories": [
+      "/Users/mac/Trifone Catologue/.claude/skills"
+    ]
+  }
+}
