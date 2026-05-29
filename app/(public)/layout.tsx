@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { createClient } from '@/lib/supabase/server'
 import PublicNav from '@/components/PublicNav'
 import type { Category } from '@/lib/types'
@@ -36,12 +37,12 @@ export default async function PublicLayout({ children }: { children: React.React
       <footer id="contact" className="bg-[#0A1220] border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col items-center gap-4 text-center">
           <Image src="/logo.png" alt="Trifone" width={48} height={48} className="rounded" />
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             className="text-sm text-gray-400 hover:text-white transition-colors"
           >
             Contact Us
-          </a>
+          </Link>
           <p className="text-xs text-gray-600">
             © {new Date().getFullYear()} Trifone. All rights reserved.
           </p>
