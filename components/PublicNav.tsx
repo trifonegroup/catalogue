@@ -101,12 +101,12 @@ export default function PublicNav({ categories }: Props) {
           </div>
 
           {/* Contact Us */}
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             className="px-3 py-2 rounded-lg text-sm font-medium text-gray-300 hover:text-white hover:bg-white/8 transition-colors"
           >
             Contact Us
-          </a>
+          </Link>
         </nav>
 
         {/* Search form */}
