@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Category } from '@/lib/types'
 
 interface Props {
@@ -49,8 +50,8 @@ export default function PublicNav({ categories }: Props) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center gap-6">
 
         {/* Logo */}
-        <Link href="/" className="text-xl font-extrabold text-white shrink-0 tracking-tight">
-          Tri<span className="text-blue-500">fone</span>
+        <Link href="/" className="shrink-0">
+          <Image src="/logo.png" alt="Trifone" width={40} height={40} className="rounded" />
         </Link>
 
         {/* Nav links */}
