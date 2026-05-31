@@ -28,9 +28,8 @@ export default function ContactPage() {
           <div>
             <h3 className="text-sm font-semibold text-gray-900 mb-1">Store Address</h3>
             <p className="text-sm text-gray-500 leading-relaxed">
-              123 Commerce Street<br />
-              Lagos Island, Lagos<br />
-              Nigeria
+              25b Ivy Close, Abiola Gardens Estate,<br />
+              Alausa, Ikeja, Lagos, Nigeria.<br />
             </p>
           </div>
         </div>
@@ -45,8 +44,7 @@ export default function ContactPage() {
           <div>
             <h3 className="text-sm font-semibold text-gray-900 mb-1">Phone Numbers</h3>
             <p className="text-sm text-gray-500 leading-relaxed">
-              +234 800 000 0001<br />
-              +234 800 000 0002
+              07072105042
             </p>
           </div>
         </div>
@@ -61,10 +59,10 @@ export default function ContactPage() {
           <div>
             <h3 className="text-sm font-semibold text-gray-900 mb-1">Email Address</h3>
             <a
-              href="mailto:hello@trifone.com"
+              href="mailto:trifonegroup@gmail.com"
               className="text-sm text-blue-600 hover:text-blue-800 transition-colors"
             >
-              hello@trifone.com
+               trifonegroup@gmail.com
             </a>
           </div>
         </div>
@@ -79,12 +77,12 @@ export default function ContactPage() {
           <div>
             <h3 className="text-sm font-semibold text-gray-900 mb-1">WhatsApp</h3>
             <a
-              href="https://wa.me/2348000000001"
+              href="https://wa.me/09036587055"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-emerald-600 hover:text-emerald-800 transition-colors"
             >
-              +234 800 000 0001
+              09036587055
             </a>
             <p className="text-xs text-gray-400 mt-0.5">Tap to chat with us</p>
           </div>
@@ -104,11 +102,11 @@ export default function ContactPage() {
             <h3 className="text-sm font-semibold text-gray-900 mb-3">Business Hours</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-8 text-sm">
               <div className="text-gray-500">Monday – Friday</div>
-              <div className="text-gray-700 font-medium">8:00 AM – 6:00 PM</div>
+              <div className="text-gray-700 font-medium">9:00 AM – 5:00 PM</div>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-8 text-sm mt-2">
               <div className="text-gray-500">Saturday</div>
-              <div className="text-gray-700 font-medium">9:00 AM – 4:00 PM</div>
+              <div className="text-gray-700 font-medium">9:00 AM – 5:00 PM</div>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-8 text-sm mt-2">
               <div className="text-gray-500">Sunday</div>
