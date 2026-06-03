@@ -1,8 +1,8 @@
 import { createClient } from '@/lib/supabase/server'
-import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { ProductWithCategory, Setting } from '@/lib/types'
+import ImageSlider from '@/components/ImageSlider'
 
 export const revalidate = 60
 
@@ -47,46 +47,7 @@ export default async function ProductDetailPage({ params }: Props) {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Image gallery */}
-        <div className="space-y-3">
-          {images.length > 0 ? (
-            <>
-              {/* Main image */}
-              <div className="relative aspect-square rounded-xl overflow-hidden border border-gray-100 bg-gray-50">
-                <Image
-                  src={images[0]}
-                  alt={product.name}
-                  fill
-                  className="object-contain p-6"
-                  priority
-                />
-              </div>
-              {/* Thumbnail strip */}
-              {images.length > 1 && (
-                <div className="flex gap-2 overflow-x-auto pb-1">
-                  {images.map((url, i) => (
-                    <div
-                      key={url}
-                      className="relative shrink-0 w-20 h-20 rounded-lg overflow-hidden border border-gray-200 bg-gray-50"
-                    >
-                      <Image
-                        src={url}
-                        alt={`${product.name} ${i + 1}`}
-                        fill
-                        className="object-contain p-1"
-                      />
-                    </div>
-                  ))}
-                </div>
-              )}
-            </>
-          ) : (
-            <div className="aspect-square rounded-xl border border-gray-100 bg-gray-50 flex items-center justify-center">
-              <svg className="w-24 h-24 text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-            </div>
-          )}
-        </div>
+        <ImageSlider images={images} productName={product.name} />
 
         {/* Info */}
         <div className="space-y-5">
