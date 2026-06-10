@@ -33,7 +33,7 @@ export default async function ProductDetailPage({ params }: Props) {
   const images: string[] = product.images ?? []
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 px-6 py-8">
       {/* Back link */}
       <Link
         href="/"
